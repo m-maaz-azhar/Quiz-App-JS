@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #16A085;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: aliceblue;
+}
+
+.welcomeText {
+    width: 400px;
+}
+
+.welcomeText input,
+.welcomeText button {
+    display: block;
+    width: 100%;
+}
+
+.welcomeText input {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #16A085;
+}
+
+.welcomeText button {
+    font-size: 22px;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #16A085;
+    color: white;
+    transition: 0.4s all;
+}
+
+.welcomeText button:hover {
+    transform: translateY(-4px);
+
+}
+
+.quiz {
+    display: grid;
+    grid-template-rows: 60px auto;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+
+.quizHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #16A085;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.quizUser {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+
+.quizBody {
+    padding: 30px;
+}
+
+.optionGroup {
+    list-style-type: none;
+    margin: 30px 0;
+}
+.option{
+    background-color: aliceblue;
+    width: 300px;
+    padding: 14px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+.option:hover{
+    cursor: pointer;
+    border:2px solid #16A085;
+}
+.btnNext{
+    background-color: #16A085;
+    color:aliceblue;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    float: right;
+}
+.btnNext:hover{
+    background-color: aliceblue;
+    color:#16A085;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.result{
+    background-color: white;
+    color:#16A085;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 2px solid #16A085;
+}
+.active{
+    background-color: #16A085;
+    color: white;
+}
+footer {
+    background-color: #16A085;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
